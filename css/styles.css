@@ -1,0 +1,128 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ICON CHANGES */
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px 0 0 10px;
+}
+.line1, .line2, .line3 {
+  width: 35px;
+  height: 5px;
+  background: #000;
+  margin: 6px 0 6px 20px;
+  transition: 0.4s;
+}
+.change .line1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .line2 {
+  opacity: 0;
+}
+.change .line3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* END ICON */
+
+/* TODO LIST */
+
+.header h1 {
+  font-weight: 300;
+}
+
+
+
+.todoCon{display: none;}
+
+
+
+input:focus,
+input:active {outline: none;}
+
+input {
+  display: inline-block;
+  border: none;
+  color: #999;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+   0 3px 1px -2px rgba(0, 0, 0, .2),
+    0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+button#add {
+  display: inline-block;
+  background: #4285f4;
+  color: #fff;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  outline: none;
+  transition: all ease-in-out 300ms;
+}
+
+#add:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.8);
+  transform: translate(0px, -5px);
+}
+
+ul#myList {
+  padding: 10px;
+  overflow: hidden;
+}
+
+
+ul#myList li {
+  color: #999;
+  float: left;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+ul#myList li:hover {
+  background: #e6e6e6;
+}
+
+.todoBox {
+   max-width: 400px;
+   height: auto;
+   border-radius: 10px;
+   padding: 30px;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+    0 3px 1px -2px rgba(0, 0, 0, .2),
+     0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.line {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.remove {
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  float: right;
+  transition: 1s;
+}
+
+.remove:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.display {display: block;}
+
+/* END OF TODO LIST */
