@@ -37,9 +37,4 @@ $(document).ready(function() {
 
 })();
 
-(function displayTime(){
-   var elem = document.getElementById('clock');
-   var time = new Date();
-   elem.innerHTML = time.toLocaleTimeString();
-   setTimeout(displayTime, 1000);
-})();
+
